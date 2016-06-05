@@ -1,0 +1,8 @@
+prefix=/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/install
+
+Name: rosserial_tivac
+Description: Description of rosserial_tivac
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+# license removed for brevity
+import rospy
+from geometry_msgs.msg import Twist
+
+def talker():
+    pub = rospy.Publisher('chatter_vel', Twist, queue_size=10)	# defino que va a publicar un String en el canal "chatter1"
+    rospy.init_node('move_control', anonymous=True)			# se inicializa el nodo con nombre "nodo1"
+    rate = rospy.Rate(1) # 1hz					# defino la frecuencia a la que envio los datos
+    new_vel = Twist()
+    new_vel.linear.x = 1
+    while not rospy.is_shutdown():
+	new_vel.linear.x = new_vel.linear.x + 1
+        rospy.loginfo(new_vel)					# cargo e imprimo el mensaje
+        pub.publish(new_vel)					# publico el mensaje
+        rate.sleep()						# espero la frecuencia que defini
+
+if __name__ == '__main__':
+    try:
+        talker()
+    except rospy.ROSInterruptException:
+        pass
