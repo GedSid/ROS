@@ -1,0 +1,15 @@
+import serial
+import time
+
+s = serial.Serial()
+s.port = "/dev/ttyACM0"
+
+s.open()
+
+try:
+    while True:
+        s.write(raw_input("\ndame input: "))
+        time.sleep(0.1)
+except:
+    s.close()
+    print("\nchau")
