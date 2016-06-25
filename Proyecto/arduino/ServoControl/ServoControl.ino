@@ -31,7 +31,6 @@ void servo_cb( const std_msgs::UInt16& cmd_msg){
   digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
 }
 
-
 ros::Subscriber<std_msgs::UInt16> sub("servo", servo_cb);
 
 void setup(){
