@@ -5,8 +5,8 @@ from geometry_msgs.msg import Twist
 import sys
 
 def talker():
-    pub = rospy.Publisher('chatter_vel', Twist, queue_size=10)	# defino que va a publicar un twist en el canal "chatter_vel"
-    rospy.init_node('move_control', anonymous=True)			# se inicializa el nodo con nombre "move_control"
+    pub = rospy.Publisher('chatter_vel', Twist, queue_size=10)	# defino que va a publicar un String en el canal "chatter1"
+    rospy.init_node('move_control', anonymous=True)			# se inicializa el nodo con nombre "nodo1"
     rate = rospy.Rate(1) # 1hz					# defino la frecuencia a la que envio los datos
     while not rospy.is_shutdown():
         #quiero que la velocidad la ingrese por teclado
