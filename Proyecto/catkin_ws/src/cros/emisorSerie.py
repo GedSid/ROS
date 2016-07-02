@@ -14,18 +14,18 @@ def talker():
         while (vel_linear.isdigit() == False):
             vel_linear=raw_input('Ingresar la velocidad lineal en numero [m/s]: ')#pido que ingrese la velocidad en teclado
 
-        print ('Velocidad lineal %s [m/s] \n' % (vel_linear))
+        print ('Velocidad lineal %s [m/s] \n ' % (vel_linear))
     
         vel_angular='a'
         while (vel_angular.isdigit() == False):
             vel_angular=raw_input('Ingresar la velocidad angular en numero [m/s]: ')#pido que ingrese la velocidad en teclado
 
-        print ('Velocidad angular %s [m/s] \n' % (vel_angular))
+        print ('Velocidad angular %s [m/s] \n ' % (vel_angular))
     
         # HABRIA QUE HACER CALCULO MEDIANTE EL DARIO DE LAS RUEDAS PARA TRANSFORMAR LA VELOCIDAD EN METROS POR SEGUNDO A EL VALOR DE TWIST
         new_vel = Twist()
-        new_vel.linear.x = vel_linear
-        new_vel.angular.z = vel_angular
+        new_vel.linear.x = int(vel_linear)
+        new_vel.angular.z = int(vel_angular)
     
         rospy.loginfo(new_vel)					# cargo e imprimo el mensaje
         pub.publish(new_vel)					# publico el mensaje

@@ -7,11 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export CPATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build"
-export PYTHONPATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/src:$ROS_PACKAGE_PATH"
+export CPATH="/opt/ros/indigo/include"
+export LD_LIBRARY_PATH="/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+export PWD="/home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build"
+export PYTHONPATH="/opt/ros/indigo/lib/python2.7/dist-packages"
+export ROS_PACKAGE_PATH="/home/alumno/Escritorio/ROS/Proyecto/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks"

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build
+CMAKE_BINARY_DIR = /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msgs_generate_mes
 .PHONY : cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build/cros && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build/cros && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/src /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/src/cros /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build/cros /home/alumno/Escritorio/ros2/Proyecto/catkin_ws/build/cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/src /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/src/cros /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build/cros /home/alumno/Escritorio/ROS/Proyecto/catkin_ws/build/cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cros/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

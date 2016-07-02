@@ -1,8 +1,8 @@
-prefix=/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/install
+prefix=/home/alumno/Escritorio/ROS/Proyecto/catkin_ws/install
 
 Name: cros
 Description: Description of cros
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/alumno/Escritorio/ros2/Proyecto/catkin_ws/install/lib 
+Libs: -L/home/alumno/Escritorio/ROS/Proyecto/catkin_ws/install/lib 
 Requires: 
