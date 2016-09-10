@@ -36,7 +36,7 @@ def Serial_send(data):
     l_wheel_vel, r_wheel_vel = data
     import serial
     ser = serial.Serial()  # open first serial port
-    ser.port = "/dev/ttyACM1" # indica el puerto del dreamster
+    ser.port = "/dev/ttyACM0" # indica el puerto del dreamster
     ser.open()
     
     print("valores: ", l_wheel_vel, r_wheel_vel, " chrValores: ", str(l_wheel_vel), str(r_wheel_vel))

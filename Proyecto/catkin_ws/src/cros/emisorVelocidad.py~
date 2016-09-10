@@ -44,8 +44,8 @@ def Serial_send(data):
     ser.write(chr(header))
     ser.write(str(l_wheel_vel))
     ser.write('/')
-    ser.write(str(r_wheel_vel))      # escribe en el puerto los dos valores de velocidad
-    ser.write('/')
+    #ser.write(str(r_wheel_vel))      # escribe en el puerto los dos valores de velocidad
+    #ser.write('/')
     ser.close()             # close port
 ###############################################################################
 def Velocity_control_node():
